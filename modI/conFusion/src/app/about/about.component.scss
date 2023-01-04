@@ -1,0 +1,14 @@
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.container {
+    @include zero-margin(30px,30px);
+    color:black;
+    min-height: 150px;
+}
+
+.p-about {
+    margin: 0px;
+}
